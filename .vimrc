@@ -14,6 +14,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-dispatch'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
@@ -56,3 +57,6 @@ function! CleverTab()
     return "\<C-N>"
 endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
+
+command W Gwrite | Git commit -m "auto-commit from vim" | Git push
+command Wq Gwrite | Git commit -m "auto-commit from vim" | Git push | q
