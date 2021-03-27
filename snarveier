@@ -1,0 +1,55 @@
+i3: 
+https://i3wm.org/docs/userguide.html
+- mod+h/j/k/l: change focus
+- mod+number: change workspace
+- mod+d: open dmenu
+- mod+enter: open terminal
+- mod+w: change layout to tabbed
+- mod+e: change layout splith/splitv
+- mod+b: split horisontal ("beside")
+- mod+v: split vertical
+- mod+a: focus parent
+- mod+shift+q: kill window
+- mod+shift+e: exit i3
+- mod+shift+r: restart i3
+- mod+shift+number: move window to workspace
+- mod+f: toggle full screen
+- mod+x: lock
+- applikasjoner:
+    - mod+i: firefox
+    - mod+shift+s: spotify
+    - mod+shift+c: gnome-control-center (instillinger)
+    - mod+c: kalender
+- mod+r: resize window
+- mod+Tab: workspace back_and_forth
+
+firefox
+- ctrl+n: New window
+- ctrl+t: New tab
+- ctrl+w: Close tab
+- ctrl+shift+w: Close window
+- ctrl+tab: Change tab
+- alt+number: Go to tab
+- ?: vim bindings help
+
+vim
+- windows and tabs:
+  * ctrl+w s: split vertically
+  * ctrl+w v: split horisontally
+  * ctrl+w h/j/k/l: navigate windows
+  * ctrl+w n: split vertically into new file
+  * :tabe fil.txt: edit fil.txt in new tab
+  * gt: go to next tab
+  * gT: go to previous tab
+  * {i}gT: go to tab i
+  * ctrl+w T: move window to new tab
+  * :help window: more info
+
+weechat:
+- alt+j: gå til buffer med tall {0..99}
+
+input:
+- ctrl+a/e: go to start/end of line
+- ctrl+u: delete line
+- alt+b/f: go back/forward one word
+- ctrl+w: delete word
