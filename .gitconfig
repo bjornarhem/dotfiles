@@ -3,3 +3,5 @@
 	name = Bjørnar Gullikstad Hem
 [core]
 	editor = vim
+[credential]
+	helper = cache

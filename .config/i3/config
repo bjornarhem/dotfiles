@@ -101,9 +101,9 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -168,12 +168,20 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-# Bjørnars greier begynner her
-# Set caps to escape
-exec_always --no-startup-id "setxkbmap -option caps:escape"
+# Tastaturgreier
+# Sett Caps Lock til Alt Gr i kombinasjon med annet, og Escape ellers
+exec_always --no-startup-id "setxkbmap -option lv3:caps_switch"
+exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
 
-# Keyboard macros
-# bindsym --release Escape+d "exec xdotool key BackSpace"
+# Gjør Alt Gr (Caps Lock) + hjkl til piltaster
+exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'"
+exec_always --no-startup-id "xmodmap -e 'keysym j = j J j J Down'"
+exec_always --no-startup-id "xmodmap -e 'keysym k = k K k K Up'"
+exec_always --no-startup-id "xmodmap -e 'keysym l = l L l L Right'"
+
+# Gjør Alt Gr (Caps Lock) + d til backspace
+exec_always --no-startup-id "xmodmap -e 'keysym d = d D d D BackSpace'"
+
 
 # Shortcuts
 bindsym $mod+i "exec firefox"
@@ -247,6 +255,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # bar
 bar {
+    strip_workspace_numbers yes
     status_command i3blocks
     font pango:Font Awesome 12
 	colors {
@@ -278,3 +287,8 @@ exec --no-startup-id redshift
 
 # Moving workspaces between monitors
 bindsym $mod+m move workspace to output left
+
+# Workspaces assignments
+for_window [class="Spotify"] move to workspace $ws10
+assign [class="discord"] $ws9
+assign [class="zoom"] $ws8
