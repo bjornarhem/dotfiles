@@ -60,3 +60,9 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 
 command W Gwrite | Git commit -m "auto-commit from vim" | Git push
 command Wq Gwrite | Git commit -m "auto-commit from vim" | Git push | q
+
+" Don't ask
+imap <Left> <Left><Esc>
+imap <Up> <Up><Esc>
+imap <Down> <Down><Esc>
+imap <Right> <Right><Esc>
