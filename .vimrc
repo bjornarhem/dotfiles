@@ -38,6 +38,7 @@ set showmatch
 set ignorecase
 set incsearch
 set number
+set relativenumber
 set autoindent
 set tabstop     =4
 set softtabstop =4

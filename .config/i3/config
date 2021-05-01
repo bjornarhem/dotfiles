@@ -168,20 +168,6 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-# Tastaturgreier
-# Sett Caps Lock til Alt Gr i kombinasjon med annet, og Escape ellers
-exec_always --no-startup-id "setxkbmap -option lv3:caps_switch"
-exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
-
-# Gjør Alt Gr (Caps Lock) + hjkl til piltaster
-exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'"
-exec_always --no-startup-id "xmodmap -e 'keysym j = j J j J Down'"
-exec_always --no-startup-id "xmodmap -e 'keysym k = k K k K Up'"
-exec_always --no-startup-id "xmodmap -e 'keysym l = l L l L Right'"
-
-# Gjør Alt Gr (Caps Lock) + d til backspace
-exec_always --no-startup-id "xmodmap -e 'keysym d = d D d D BackSpace'"
-
 
 # Shortcuts
 bindsym $mod+i "exec firefox"
@@ -292,3 +278,11 @@ bindsym $mod+m move workspace to output left
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="discord"] $ws9
 assign [class="zoom"] $ws8
+
+# Tastaturgreier
+# Sett Caps Lock til Alt Gr i kombinasjon med annet, og Escape ellers
+exec_always --no-startup-id "setxkbmap -option lv3:caps_switch"
+exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
+
+# Gjør Alt Gr (Caps Lock) + hjkl til piltaster
+exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
