@@ -278,6 +278,8 @@ bindsym $mod+m move workspace to output left
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="discord"] $ws9
 assign [class="zoom"] $ws8
+assign [class="slack"] $ws9
+assign [class="microsoft teams - preview"] $ws8
 
 # Tastaturgreier
 # Sett Caps Lock til Alt Gr i kombinasjon med annet, og Escape ellers
