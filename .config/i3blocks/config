@@ -53,17 +53,17 @@ command=echo $( xbacklight -get | cut -d '.' -f 1 )"%"
 ## Memory usage
 ##
 ## The type defaults to "mem" if the instance is not specified.
-#[memory]
-#label=MEM
+[memory]
+label=MEM
+separator=false
+interval=30
+
+[memory]
+label=SWAP
+instance=swap
 #separator=false
-#interval=30
-#
-#[memory]
-#label=SWAP
-#instance=swap
-#separator=false
-#interval=30
-#
+interval=30
+
 ## Disk usage
 ##
 ## The directory defaults to $HOME if the instance is not specified.
