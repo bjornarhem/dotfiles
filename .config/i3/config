@@ -175,6 +175,7 @@ bindsym $mod+Shift+s "exec spotify"
 bindsym $mod+Shift+c "exec XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 bindsym $mod+c "exec GDK_SCALE=2 gsimplecal"
 bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+d "exec autorandr --change"
 
 # hjkl til navigering
 bindsym $mod+h focus left
@@ -287,4 +288,5 @@ exec_always --no-startup-id "setxkbmap -option lv3:caps_switch"
 exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
 
 # Gjør Alt Gr (Caps Lock) + hjkl til piltaster
+exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
 exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"

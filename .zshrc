@@ -54,6 +54,10 @@ alias dotodo="git add TODO; git commit -m \"TODO\"; git push"
 alias kopier="xclip -selection clipboard"
 alias cal="ncal -bMw"
 
+mango(){
+    $@ | lolcat
+}
+
 # Path
 PATH="$PATH:/home/bjornargh/.local/bin"
 
