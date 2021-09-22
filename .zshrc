@@ -58,6 +58,10 @@ mango(){
     $@ | lolcat
 }
 
+upload(){
+    scp $1 bjornargh@cassarossa.samfundet.no:~/public_html/
+}
+
 # Path
 PATH="$PATH:/home/bjornargh/.local/bin"
 
