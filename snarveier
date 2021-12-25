@@ -20,6 +20,7 @@ https://i3wm.org/docs/userguide.html
     - mod+shift+s: spotify
     - mod+shift+c: gnome-control-center (instillinger)
     - mod+c: kalender
+    - mod+shift+f: file manager (ranger)
 - mod+r: resize window
 - mod+Tab: workspace back_and_forth
 

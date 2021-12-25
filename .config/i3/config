@@ -176,6 +176,7 @@ bindsym $mod+Shift+c "exec XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 bindsym $mod+c "exec GDK_SCALE=2 gsimplecal"
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+d "exec autorandr --change"
+bindsym $mod+Shift+f "exec i3-sensible-terminal -e ranger"
 
 # hjkl til navigering
 bindsym $mod+h focus left
