@@ -1,3 +1,6 @@
+let mapleader = ","
+noremap <space> :
+
 " --
 " Vundle stuff
 " --
@@ -61,6 +64,12 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 
 command W Gwrite | Git commit -m "auto-commit from vim" | Git push
 command Wq Gwrite | Git commit -m "auto-commit from vim" | Git push | q
+
+" Neat X clipboard integration
+" ,p will paste clipboard into buffer
+" ,c will copy entire buffer into clipboard
+noremap <leader>p :read !xsel --clipboard --output<cr>
+noremap <leader>c :w !xsel -ib<cr><cr>
 
 " Don't ask
 imap <Left> <Left><Esc>
