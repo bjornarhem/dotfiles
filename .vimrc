@@ -76,3 +76,7 @@ imap <Left> <Left><Esc>
 imap <Up> <Up><Esc>
 imap <Down> <Down><Esc>
 imap <Right> <Right><Esc>
+
+" Folding
+autocmd BufRead,BufNewFile *.txt set foldmethod=indent
+nnoremap ø za
