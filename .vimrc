@@ -80,3 +80,6 @@ imap <Right> <Right><Esc>
 " Folding
 autocmd BufRead,BufNewFile *.txt set foldmethod=indent
 nnoremap ø za
+
+" Syntax highlighting for txt files
+au BufRead,BufNewFile *.txt set filetype=txt
