@@ -290,4 +290,3 @@ exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
 
 # Gjør Alt Gr (Caps Lock) + hjkl til piltaster
 exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
-exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
