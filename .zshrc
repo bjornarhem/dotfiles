@@ -59,7 +59,8 @@ mango(){
 }
 
 upload(){
-    scp $1 bjornargh@cassarossa.samfundet.no:~/public_html/
+    scp $1 bjornargh@cassarossa.samfundet.no:~/public_html/ &&
+    echo -n "https://home.samfundet.no/~bjornargh/$(basename $1)" | xclip -selection clipboard
 }
 
 # Path
