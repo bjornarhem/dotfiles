@@ -286,12 +286,9 @@ assign [class="microsoft teams - preview"] $ws8
 assign [class="thunderbird"] $ws9
 
 # Tastaturgreier
-# Gjør Alt Gr (Caps Lock) + hjkl til piltaster
-exec_always --no-startup-id "setxkbmap -symbols 'pc+no+inet(evdev)+custom(meta_arrows)'"
-
 # Sett Caps Lock til Alt Gr i kombinasjon med annet, og Escape ellers
 exec_always --no-startup-id "setxkbmap -option lv3:caps_switch"
 exec_always --no-startup-id "xcape -e 'ISO_Level3_Shift=Escape'"
 
 # Gjør Alt Gr (Caps Lock) + hjkl til piltaster
-# exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
+exec_always --no-startup-id "xmodmap -e 'keysym h = h H h H Left'; xmodmap -e 'keysym j = j J j J Down'; xmodmap -e 'keysym k = k K k K Up'; xmodmap -e 'keysym l = l L l L Right'"
