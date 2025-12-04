@@ -53,6 +53,7 @@ alias skrivut="lp -h printhost.samfundet.no -d motzfeldt"
 alias dotodo="git add TODO; git commit -m \"TODO\"; git push"
 alias kopier="xclip -selection clipboard"
 alias cal="ncal -bMw"
+alias ..="cd .."
 
 mango(){
     $@ | lolcat
