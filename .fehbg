@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-center --image-bg '#76924C' '/home/bjornargh/Pictures/bakgrunn.jpg' 
+feh --no-fehbg --bg-center --image-bg '#A6A999' '/home/bjornargh/Pictures/bakgrunn.jpg' 

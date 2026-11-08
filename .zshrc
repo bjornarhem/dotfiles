@@ -73,3 +73,4 @@ SHELL=/usr/bin/zsh
 # From R course
 export R_LIBS=~/lib/R
 alias R='R --no-save'
+
