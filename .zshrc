@@ -74,3 +74,5 @@ SHELL=/usr/bin/zsh
 export R_LIBS=~/lib/R
 alias R='R --no-save'
 
+alias note='vim note_$(date +%F).txt'
+
